@@ -19,7 +19,9 @@ for filepath in migration_files:
     print(f"Running migration: {filepath}")
     with open(filepath, "r") as f:
         sql = f.read()
-    cursor.execute_string(sql)
+    for _ in conn.execute_string(sql):
+        pass
+  
     print(f"✅ Success: {filepath}")
 
 cursor.close()
