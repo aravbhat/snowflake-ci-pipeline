@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS sales_db.dev.sales (
+CREATE TABLE IF NOT EXISTS sales (
     sale_id INTEGER,
     amount NUMBER(10,2),
     region VARCHAR(50),

@@ -1,6 +1,6 @@
-DELETE FROM sales_db.dev.sales;
+DELETE FROM sales;
 
-INSERT INTO sales_db.dev.sales (sale_id, amount, region, currency, sale_date)
+INSERT INTO sales (sale_id, amount, region, currency, sale_date)
 VALUES
     (1, 250.00, 'APAC', 'USD', '2026-07-01'),
     (2, 100.50, 'EMEA', 'USD', '2026-07-02'),

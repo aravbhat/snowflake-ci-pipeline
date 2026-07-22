@@ -1,2 +1,2 @@
-ALTER TABLE sales_db.dev.sales
+ALTER TABLE sales
 ADD COLUMN IF NOT EXISTS updated_at TIMESTAMP_NTZ;
